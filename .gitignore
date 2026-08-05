@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # Python
 # ============================================================
 __pycache__/
@@ -37,6 +37,7 @@ tmp/
 temp/
 *.tmp
 *.bak
+repository_file_list.txt
 
 # ============================================================
 # Jupyter
@@ -44,21 +45,28 @@ temp/
 .ipynb_checkpoints/
 
 # ============================================================
-# Nanopore raw sequencing data
+# Nanopore raw sequencing and basecalling data
 # ============================================================
 *.fast5
 *.pod5
 *.slow5
 *.blow5
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+sequencing_summary*.txt
 
 # ============================================================
-# Alignment files
+# Alignment files and indexes
 # ============================================================
 *.sam
 *.bam
 *.bai
 *.cram
 *.crai
+*.fai
+*.mmi
 
 # ============================================================
 # Large feature datasets
@@ -66,10 +74,14 @@ temp/
 data/raw/
 data/intermediate/
 data/processed/
+signal_feature_batches/
+merged_outputs/
 
 *.shuf
 *.shuf.tmp
 *.tmp_no_header
+*.csv.gz
+*.tsv.gz
 
 # ============================================================
 # Training outputs and model checkpoints
@@ -105,3 +117,4 @@ configs/local.yml
 configs/private.yaml
 configs/private.yml
 configs/preprocessing.env
+configs/external_model_manifest.json

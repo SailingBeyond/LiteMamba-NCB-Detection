@@ -106,6 +106,9 @@ LiteMamba-NCB-Detection/
 
 ## Requirements
 
+Python 3.10 or newer is required because several scripts use modern built-in
+generic and union type-hint syntax.
+
 ### External command-line software
 
 The upstream preprocessing scripts record the tools used in the study:
@@ -124,8 +127,11 @@ These tools are not installed through `requirements.txt`. Their executable paths
 Install a PyTorch build appropriate for the target CPU/GPU environment, then install the remaining dependencies:
 
 ```bash
-pip install numpy pandas matplotlib scikit-learn h5py tqdm umap-learn
+pip install -r requirements.txt
 ```
+
+PyTorch is intentionally not pinned in `requirements.txt`, because the correct
+wheel depends on the local CPU/GPU and CUDA environment.
 
 The core Python dependencies used by the repository are:
 
@@ -571,6 +577,9 @@ cp configs/external_model_manifest.example.json \
    configs/external_model_manifest.json
 ```
 
+`configs/external_model_manifest.json` is ignored by Git so that local
+checkpoint filenames and machine-specific model locations are not committed.
+
 Example:
 
 ```bash
@@ -775,7 +784,7 @@ python scripts/08_figures/plot_figure4abc.py \
 - Keep the feature CSV and metadata TSV row-aligned when generating template-level splits.
 - Binary and multiclass checkpoints use different per-base input dimensions and are not interchangeable.
 - `configs/preprocessing.env` contains local paths and is intentionally ignored by Git.
-- `configs/external_model_manifest.json` should contain local checkpoint filenames and may also be treated as a local configuration when appropriate.
+- `configs/external_model_manifest.json` contains local checkpoint filenames and is intentionally ignored by Git.
 - Raw FAST5/POD5, SAM/BAM, large feature tables, and model checkpoints are not intended to be committed to the source repository.
 - Plotting scripts export vector formats where supported so that text and graphical elements remain editable.
 
