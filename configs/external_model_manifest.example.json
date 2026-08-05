@@ -1,0 +1,20 @@
+{
+  "6-class": {
+    "bigru": "6class_bigru.pt",
+    "transformer": "6class_transformer.pt",
+    "convmixer": "6class_convmixer.pt",
+    "litemamba": "6class_litemamba.pt"
+  },
+  "5X": {
+    "bigru": "5X_bigru.pt",
+    "transformer": "5X_transformer.pt",
+    "convmixer": "5X_convmixer.pt",
+    "litemamba": "5X_litemamba.pt"
+  },
+  "5Y": {
+    "bigru": "5Y_bigru.pt",
+    "transformer": "5Y_transformer.pt",
+    "convmixer": "5Y_convmixer.pt",
+    "litemamba": "5Y_litemamba.pt"
+  }
+}
