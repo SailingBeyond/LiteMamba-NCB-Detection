@@ -22,6 +22,7 @@ The repository covers the workflow from FAST5 preprocessing to feature construct
 - [8. Figure reproduction](#8-figure-reproduction)
 - [Reproducibility notes](#reproducibility-notes)
 - [Data and checkpoints](#data-and-checkpoints)
+- [License](#license)
 
 ## Workflow
 
@@ -791,6 +792,16 @@ python scripts/08_figures/plot_figure4abc.py \
 ## Data and checkpoints
 
 This repository contains analysis code and configuration templates. Raw sequencing data, large intermediate files, and trained checkpoints are not bundled. Supply their locations through the command-line arguments and local configuration files described above.
+
+## License
+
+The source code in this repository is licensed under the MIT License. See
+[LICENSE](LICENSE) for the full license text.
+
+The MIT License applies to the source code distributed in this repository.
+Third-party datasets, sequencing data, pretrained software, external command-line
+tools, and other third-party materials remain subject to their respective
+licenses, terms of use, and data-access conditions.
 
 ## Citation
 
