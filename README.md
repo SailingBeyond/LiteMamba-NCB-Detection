@@ -6,39 +6,41 @@ This repository retains its original GitHub name, `LiteMamba-NCB-Detection`. Thi
 
 | Path | Contents |
 | --- | --- |
-| [`paper_figures/`](paper_figures/) | Plotting code and frozen inputs for Figures 2E–F, 3D–F, 4A–D, S6 and S7. |
+| [`paper_figures/`](paper_figures/) | Code and frozen inputs for Figures 2E–F, 3B, 3D–F, 4A–D, S6 and S7, and Supplementary Table S1. |
 | [`workflow/`](workflow/) | Revised preprocessing, dataset splits, training and evaluation code. [Workflow instructions](workflow/README.md) |
 | [`workflow/same_source/`](workflow/same_source/) | Code and input requirements for the same-source controls in Supplementary Table S5. [Control workflow](workflow/same_source/README.md) |
 | [`release_assets/`](release_assets/) | Checkpoint and split manifest index with SHA-256 digests. |
 
-## Reproduce the figures
+## Reproduce the figures and Supplementary Table S1
 
-Run these commands from the repository root in a Python 3.12 environment. These five CPU plotting workflows use the frozen inputs in the repository.
+Run these commands from the repository root in a Python 3.12 environment. These six CPU workflows use the frozen inputs in the repository.
 
 ```bash
 python3 -m pip install -r paper_figures/s6/requirements.txt
 python3 paper_figures/figure2ef/plot.py --output-dir reproduced/figure2ef
+python3 paper_figures/figure3b/plot.py --output-dir reproduced/figure3b
 python3 paper_figures/figure3df/plot.py --output-dir reproduced/figure3df
 bash paper_figures/figure4/run_plot.sh --output-dir reproduced/figure4
 python3 paper_figures/s6/reproduce_s6.py --output-dir reproduced/s6
 python3 paper_figures/s7/plot.py --output-dir reproduced/s7
 ```
 
-| Figure | Output under `reproduced/` |
+| Figure or table | Output under `reproduced/` |
 | --- | --- |
 | [2E–F](paper_figures/figure2ef/) | `figure2ef/Figure2E_zoom.png` and `figure2ef/Figure2F_zoom.png` |
+| [3B and Supplementary Table S1](paper_figures/figure3b/) | `figure3b/Figure3B_accuracy.png`, `figure3b/Supplementary_Table_S1.csv` and `figure3b/Figure3B_per_seed.csv` |
 | [3D–F](paper_figures/figure3df/) | `figure3df/figures/Figure3D_GatedConv_seed42.png`, `Figure3E_paired_GatedConv_5X.png` and `Figure3F_paired_GatedConv_5Y.png` |
 | [4A–D](paper_figures/figure4/) | `figure4/figures/Figure4_overview.png` and individual panels |
 | [S6](paper_figures/s6/) | `s6/figures/Supplementary_Figure_S6_GatedConv.png` |
 | [S7](paper_figures/s7/) | `s7/figures/Supplementary_Figure_S7_GatedConv.png` |
 
-The UMAP plots use the saved coordinates of held-out test embeddings. Figure 4 uses frozen counts to recompute the metrics. The [manuscript Figure 4 PNG](paper_figures/figure4/Figure4_manuscript.png) is provided alongside the code and provenance for the regenerated overview. Supplementary Figure S6 supports `--verify` for byte-for-byte comparison with the reference PNGs in the documented rendering environment.
+Figure 3B and Supplementary Table S1 are recalculated from frozen test-set confusion counts for the three seeds. The UMAP plots use the saved coordinates of held-out test embeddings. Figure 4 uses frozen counts to recompute the metrics. The [manuscript Figure 4 PNG](paper_figures/figure4/Figure4_manuscript.png) is provided alongside the code and provenance for the regenerated overview. Supplementary Figure S6 supports `--verify` for byte-for-byte comparison with the reference PNGs in the documented rendering environment.
 
 ## Train or evaluate the models
 
 See the [workflow instructions](workflow/README.md) for task-specific dependencies, input formats and commands. The revised binary and main multiclass tasks target a 7:2:1 train, validation and test split. The binary tasks use a shared read-grouped manifest. The main ATCGXY, ATCGX and ATCGY manifests use sequencing read IDs where available and source-row identifiers for historical positive examples under the one-row-per-read design. The partition audits check disjointness for the recorded identities. The three same-source controls use separate manifests.
 
-Fresh training requires feature tables and corresponding metadata. Historical evaluation requires the original data and run records documented for each launcher. The figure commands above are the reproducible entry points for the packaged aggregate results. The model and read-split archives supply checkpoints and assignments only.
+Fresh training requires feature tables and corresponding metadata. Historical evaluation requires the original data and run records documented for each launcher. The figure and table commands above are the reproducible entry points for the packaged aggregate results. The model and read-split archives supply checkpoints and assignments only.
 
 ## Checkpoints and split manifests
 
