@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "files": {
+    "README_\u4e2d\u6587.md": {
+      "size_bytes": 6055,
+      "sha256": "b638cee35f8a07bac77f53094c1e07e77babe5e6c1d79faff0db8ca357c08a01"
+    },
+    "VALIDATION.md": {
+      "size_bytes": 1818,
+      "sha256": "a8e50cf48c46633c8e5f45c4525ac18b2ac0e4352f09366e777102bb945d3855"
+    },
+    "VERSION": {
+      "size_bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    "common.py": {
+      "size_bytes": 19976,
+      "sha256": "31c28b46b30533684697c7e7a44337b056127b961c64e929d04ab4e0adc65934"
+    },
+    "evaluate_worker.py": {
+      "size_bytes": 20287,
+      "sha256": "9e46a91178c93f7f6e3d5fd618bd1293c0efdae2058551641323b9258ce358d4"
+    },
+    "requirements.txt": {
+      "size_bytes": 188,
+      "sha256": "e35cd0de2d22eb7e9379828a4236b9872cc4356b67f21addd74f19e07284e628"
+    },
+    "run_internal_test.py": {
+      "size_bytes": 20073,
+      "sha256": "90b0feff815e9b33849527a4c644db8bf5a194ec73d09d7a15a78d85e0300fad"
+    },
+    "run_internal_test.sh": {
+      "size_bytes": 1241,
+      "sha256": "4ab5da2e6e3057d3c796d20bc8cbeb00b0868898bbcd9a855e325eac848783fd"
+    },
+    "summarize_internal_test.py": {
+      "size_bytes": 26147,
+      "sha256": "bc4f055e0354bdebf1914fbef0b89f05cac3840eecc4a9f805e2f8c202ba30c1"
+    },
+    "tests/test_common.py": {
+      "size_bytes": 12070,
+      "sha256": "e72901129b1a2945c4be15fb6584a6ea263345fcb94aed951f30a15fd5a65d11"
+    },
+    "tests/test_orchestrator.py": {
+      "size_bytes": 5819,
+      "sha256": "51f07c105bd96b99a1161c284f704ed5ef6568c44860d1be74a65e99b9692678"
+    },
+    "tests/test_summary.py": {
+      "size_bytes": 6255,
+      "sha256": "e921438bf047b0984ef626476437fb4d5f9dac116d840d7709390d43a5613487"
+    },
+    "tests/test_worker.py": {
+      "size_bytes": 6170,
+      "sha256": "f515e1396a3dea314872ed56dc724cf99ac61b12c3a42ae6f9f388481181e63b"
+    },
+    "validation_evidence/prediction_function_equivalence.json": {
+      "size_bytes": 2693,
+      "sha256": "4c80a7382bbfc52493bfb5bc0fdd75402a1739be26978e2b486e5b2054107341"
+    },
+    "validation_evidence/tests.log": {
+      "size_bytes": 5042,
+      "sha256": "c2533d7e259c1d92c044892d7614c14feca6511dd10082203cdc2c8079ec3630"
+    },
+    "validation_evidence/vendor_source_hashes.json": {
+      "size_bytes": 893,
+      "sha256": "d96db81551863daffc917e01c0f99b5cb7ec9f4913d1ea521ed5bf03d96a3a58"
+    },
+    "vendor/IterDataset.py": {
+      "size_bytes": 51085,
+      "sha256": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9"
+    },
+    "vendor/analyze_results.py": {
+      "size_bytes": 56526,
+      "sha256": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d"
+    },
+    "vendor/config_6_all_6.py": {
+      "size_bytes": 4328,
+      "sha256": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb"
+    },
+    "vendor/model_benchmark_all.py": {
+      "size_bytes": 21699,
+      "sha256": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806"
+    },
+    "vendor/resource_scheduler.py": {
+      "size_bytes": 21052,
+      "sha256": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45"
+    },
+    "vendor/train_all.py": {
+      "size_bytes": 83000,
+      "sha256": "aa4a380cf370848b8f11104b78055719160a4aaa3bdf6dff037161fcb19728a1"
+    }
+  }
+}

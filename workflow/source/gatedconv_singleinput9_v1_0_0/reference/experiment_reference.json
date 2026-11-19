@@ -1,0 +1,181 @@
+{
+  "version": "1.0.0",
+  "description": "Frozen completed final GatedConv full references; used for settings and comparison only, never weight initialization",
+  "seeds": [
+    42,
+    2024,
+    2025
+  ],
+  "schemes": [
+    "raw_only",
+    "context_only",
+    "responses_only"
+  ],
+  "scientific_configuration": {
+    "epochs": 200,
+    "patience": 30,
+    "lr": 0.001,
+    "batch_size": 256,
+    "raw_signal_len": 30,
+    "dwell_divisor": 60.0,
+    "quality_divisor": 50.0,
+    "accum_steps": 1,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.0,
+    "clip_grad": 1.0,
+    "monitor": "val_loss",
+    "model_dim": 96,
+    "num_blocks": 4,
+    "state_dim": 16,
+    "litemamba_variant": "legacy_gatedconv",
+    "readout": "target_attention",
+    "bootstrap": 200,
+    "no_plots": false,
+    "no_embeddings": false,
+    "embedding_dtype": "float32",
+    "no_epoch_logits": false,
+    "save_epoch_predictions": false,
+    "staged_exports": true
+  },
+  "input_fingerprints": {
+    "train": {
+      "feature": {
+        "path": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/train.csv",
+        "sha256": "df10d18e61f6d96f0c680c180b501677e518a7d5d573f0a2000986a31f8abce9",
+        "size": 1794081474,
+        "mtime_ns": 1792275622237226919,
+        "physical_lines": 1751317
+      },
+      "metadata": {
+        "path": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/train_meta.tsv",
+        "sha256": "420cc2791ebe925c6a786fa88d27ca4268342b73188801d784654b8cafdeca8c",
+        "size": 1635144984,
+        "mtime_ns": 1792275622237226919,
+        "physical_lines": 1751317
+      }
+    },
+    "val": {
+      "feature": {
+        "path": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/validation.csv",
+        "sha256": "c07cbf03df53105b25b1b2aef38df34eab6cacaf7acb0fb4d7528dd7f1b7b81d",
+        "size": 513267751,
+        "mtime_ns": 1792275622237226919,
+        "physical_lines": 500377
+      },
+      "metadata": {
+        "path": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/validation_meta.tsv",
+        "sha256": "1b75a6316c30e29c50760814a3f7b9dd893c0732ddbf2e714cf27a6e2c2da138",
+        "size": 469678514,
+        "mtime_ns": 1792275622237226919,
+        "physical_lines": 500377
+      }
+    },
+    "test": {
+      "feature": {
+        "path": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/test.csv",
+        "sha256": "2465a6249e3617a7d1114a8e39f82f91acd60af6de7912204297d98f4cd4eb4f",
+        "size": 256779371,
+        "mtime_ns": 1792275622237226919,
+        "physical_lines": 250189
+      },
+      "metadata": {
+        "path": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/test_meta.tsv",
+        "sha256": "928b82f67ff2e4bfe75d288a0cba9a819e5cdda9deed3eaabf2b06e9410e1ac8",
+        "size": 233339594,
+        "mtime_ns": 1792275622237226919,
+        "physical_lines": 250189
+      }
+    }
+  },
+  "input_rows": {
+    "train": 1751316,
+    "val": 500376,
+    "test": 250188
+  },
+  "model_defaults": {
+    "target_index": 3,
+    "dropout": 0.1,
+    "classifier_dropout": 0.2,
+    "ssm_bidirectional": 1,
+    "nhead": 4,
+    "num_layers": 2,
+    "gru_hidden": 64
+  },
+  "frozen_sources": {
+    "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+    "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb"
+  },
+  "baseline_records": [
+    {
+      "seed": 42,
+      "run_dir": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/sixclass_auto_v1_0_4_results/litemamba_structure_seed42_v1_0_0/full/gatedconv_target/seed_42",
+      "checkpoint_sha256": "50f5c3f36139124545eafe4fac482039d96b4a31964caf01a8248346782e10ea",
+      "model_config_sha256": "95f131ff35c79019abb7539d955b194848e9cb1bd3cf7e7aa34174325a981e47",
+      "source_sha256": {
+        "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+        "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+        "auto_find_and_train.py": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7",
+        "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+        "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+        "dual_model_stress_test.py": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b",
+        "equivalence_probe.py": "a32485a6f63b70519277d3dbc25a0862de76753ae87b98920ff76042eac86716",
+        "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+        "prepare_group_holdout.py": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076",
+        "resource_scheduler.py": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+        "run_all_4_models.py": "21636d867bea6b539ffd93628893c1bd473709895de442eddcb29dc892a98b0c",
+        "train_all.py": "ca8ae36910f33e334776f9e772ced15bbe5bb064d6cb6dd2a63081efac45b8cb",
+        "train_metadata_probe.py": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9"
+      }
+    },
+    {
+      "seed": 2024,
+      "run_dir": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/sixclass_auto_v1_0_4_results/litemamba_structure_confirm3_v1_1_0/full/gatedconv_target/seed_2024",
+      "checkpoint_sha256": "289dd84f40fe2b8cd9ae68639f1ffc3658298ca8cb81df1dc726678bc406283c",
+      "model_config_sha256": "95f131ff35c79019abb7539d955b194848e9cb1bd3cf7e7aa34174325a981e47",
+      "source_sha256": {
+        "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+        "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+        "auto_find_and_train.py": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7",
+        "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+        "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+        "dual_model_stress_test.py": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b",
+        "equivalence_probe.py": "a32485a6f63b70519277d3dbc25a0862de76753ae87b98920ff76042eac86716",
+        "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+        "prepare_group_holdout.py": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076",
+        "resource_scheduler.py": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+        "run_all_4_models.py": "9e4bd7fb183dff0c9e2fc3ae90bba49ae26453f46e2be3e398581612838fcf24",
+        "train_all.py": "aa4a380cf370848b8f11104b78055719160a4aaa3bdf6dff037161fcb19728a1",
+        "train_metadata_probe.py": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9"
+      }
+    },
+    {
+      "seed": 2025,
+      "run_dir": "/path/to/revision-inputs/CPLX-XNA-replenishment/CPLX-XNA-replenishment/fast5_single_guppy/sixclass_overlap_read_split_721/sixclass_auto_v1_0_4_results/litemamba_structure_confirm3_v1_1_0/full/gatedconv_target/seed_2025",
+      "checkpoint_sha256": "240a8249c539d8b1a47ded9bbee2fa01357289009ddbc1183e527615c5aab158",
+      "model_config_sha256": "95f131ff35c79019abb7539d955b194848e9cb1bd3cf7e7aa34174325a981e47",
+      "source_sha256": {
+        "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+        "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+        "auto_find_and_train.py": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7",
+        "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+        "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+        "dual_model_stress_test.py": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b",
+        "equivalence_probe.py": "a32485a6f63b70519277d3dbc25a0862de76753ae87b98920ff76042eac86716",
+        "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+        "prepare_group_holdout.py": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076",
+        "resource_scheduler.py": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+        "run_all_4_models.py": "9e4bd7fb183dff0c9e2fc3ae90bba49ae26453f46e2be3e398581612838fcf24",
+        "train_all.py": "aa4a380cf370848b8f11104b78055719160a4aaa3bdf6dff037161fcb19728a1",
+        "train_metadata_probe.py": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9"
+      }
+    }
+  ],
+  "feature_contract": {
+    "raw_only": "raw segments only; excludes context/statistics/responses",
+    "context_only": "ACTGN context columns0:5 only; fourth position N",
+    "responses_only": "quality/mismatch/insertion/deletion columns9:13 only; no raw/context/statistics"
+  },
+  "source_package": "litemamba_structure_confirm3_v1_1_0.zip",
+  "test_scope": "supplementary fixed internal test evaluation, no claim of newly unseen blind benchmark"
+}

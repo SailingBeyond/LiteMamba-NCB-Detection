@@ -1,0 +1,23 @@
+Python parse: 168 files passed.
+Bash syntax: 27 files passed.
+Runtime: Python 3.12.14.
+--help | preprocessing/balance_and_split_xna_pc_5class_by_read.py | passed
+--help | preprocessing/balance_and_split_xna_pc_6class_by_read.py | passed
+--help | preprocessing/balance_and_split_xna_pc_binary_by_read.py | passed
+--help | preprocessing/combine_csv_header.py | passed
+--help | preprocessing/extract_ecoli_6mer_features_spaced_by_read.py | passed
+--help | preprocessing/extract_signal_from_fast5_XY.py | ModuleNotFoundError: No module named 'h5py'
+--help | preprocessing/extract_xna_6mer_features_all.py | passed
+--help | preprocessing/extract_xna_pc_6mer_features_2_01_16.py | passed
+--help | preprocessing/extract_xna_pc_6mer_features_2_13_16.py | passed
+--help | source/figure2_binary_gatedconv_addon_v1_0_0/run_gatedconv_binary.py | passed
+--help | source/figure3_fiveclass24_training_v1_0_4/run_fiveclass24.py | passed
+--help | source/figure4_gated_comparison_v1_0_0/run_gated_comparison.py | passed
+--help | source/figure4_singleinput9_v1_0_0/run_singleinput_external.py | passed
+--help | source/gatedconv_ablation12_v1_0_0/run_ablation.py | passed
+--help | source/gatedconv_internal_test_v1_0_0/run_internal_test.py | passed
+--help | source/gatedconv_singleinput9_v1_0_0/run_singleinput.py | passed
+--help | source/litemamba_structure_confirm3_v1_1_0/run_structure.py | passed
+--help | source/litemamba_structure_diagnostic_v1_0_0/run_structure.py | passed
+--help | source/litemamba_structure_confirm3_v1_1_0/engine/train_all.py | ModuleNotFoundError: No module named 'torch'
+--help | source/figure4_gatedconv_threshold_collect_v1_0_0/collect_thresholds.py | passed

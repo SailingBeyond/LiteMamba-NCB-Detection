@@ -6,3 +6,5 @@
 *.json text eol=lf
 *.csv text eol=lf
 *.tsv text eol=lf
+# Preserve the frozen CRLF bytes for the Figure 3 replay checksum.
+/paper_figures/figure3df/data/paired_motif_metrics.csv binary !eol

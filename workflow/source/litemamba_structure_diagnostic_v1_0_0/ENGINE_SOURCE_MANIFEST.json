@@ -1,0 +1,23 @@
+{
+  "original_source_sha256": {
+    "train_all.py": "6164ca0bad07e08c62a07e945b94d785e6e8c830402d51fb8ceb1c696ac9d825",
+    "model_benchmark_all.py": "c4a5425daebdfa78756ac30bed358e987adb051127afc78c0942a9570a05a861",
+    "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+    "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+    "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+    "run_all_4_models.py": "c0d358710024af36d0d69b03c241d5a910ad96599db7fc45ea3efd5342d4939b",
+    "resource_scheduler.py": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1"
+  },
+  "patched_source_sha256": {
+    "train_all.py": "ca8ae36910f33e334776f9e772ced15bbe5bb064d6cb6dd2a63081efac45b8cb",
+    "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+    "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+    "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+    "run_all_4_models.py": "21636d867bea6b539ffd93628893c1bd473709895de442eddcb29dc892a98b0c",
+    "resource_scheduler.py": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1"
+  },
+  "purpose": "Only new structural controls and explicit shared structure queue; original baseline remains read-only."
+}

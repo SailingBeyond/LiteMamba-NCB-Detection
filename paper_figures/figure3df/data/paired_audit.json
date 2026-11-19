@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "version": "1.0.0",
+  "protocol": {
+    "overlap_rule": "discard an entire candidate sequencing read or disclosed positive proxy if its identity occurs in either model training or validation metadata",
+    "pairing": "exact original-window lineage intersection of the frozen task-specific test sets",
+    "seeds": [
+      42,
+      2024,
+      2025
+    ],
+    "sixclass_prediction": "unchanged full six-way argmax; predicting the other XNA class remains an error",
+    "sixclass_truth_subsets": {
+      "5X": [
+        "A",
+        "T",
+        "C",
+        "G",
+        "X"
+      ],
+      "5Y": [
+        "A",
+        "T",
+        "C",
+        "G",
+        "Y"
+      ]
+    }
+  },
+  "limitations": [
+    "Natural samples have sequencing-read identity; historical positive samples retain disclosed source-row-proxy identity and the original one-row-per-positive-read assumption.",
+    "Paired testing compares the final trained systems; differing training data quantities prevent attributing differences solely to class count.",
+    "The intersection is a post hoc common held-out subset, not a new external test or template/run holdout."
+  ],
+  "ambiguous_alias_rule": "Non-unique aliases are ignored; a test pair must have another unique original-window alias. UUID or motif alone is never used.",
+  "ambiguous_sixclass_window_aliases": 0,
+  "sixclass_test_rows_without_verified_lineage": 0,
+  "comparisons": {
+    "5X": {
+      "class_counts": {
+        "A": 41698,
+        "C": 41698,
+        "G": 41698,
+        "T": 41698,
+        "X": 41698
+      },
+      "exact_window_pairs_before_overlap_exclusion": 208490,
+      "excluded_pairs_due_to_train_or_validation_read_overlap": 0,
+      "fiveclass_test_rows": 1225160,
+      "fiveclass_test_rows_not_in_sixclass_test": 1016670,
+      "fiveclass_test_rows_without_verified_lineage": 0,
+      "retained_common_test_windows": 208490,
+      "retained_motifs": 1024,
+      "retained_positive_row_proxy_windows": 41698,
+      "retained_read_identities": 50722,
+      "retained_real_sequencing_read_windows": 166792,
+      "sixclass_test_rows": 250188,
+      "status": "ready",
+      "training_validation_overlap_in_retained_subset": 0
+    },
+    "5Y": {
+      "class_counts": {
+        "A": 41698,
+        "C": 41698,
+        "G": 41698,
+        "T": 41698,
+        "Y": 41698
+      },
+      "exact_window_pairs_before_overlap_exclusion": 208490,
+      "excluded_pairs_due_to_train_or_validation_read_overlap": 0,
+      "fiveclass_test_rows": 1194720,
+      "fiveclass_test_rows_not_in_sixclass_test": 986230,
+      "fiveclass_test_rows_without_verified_lineage": 0,
+      "retained_common_test_windows": 208490,
+      "retained_motifs": 1024,
+      "retained_positive_row_proxy_windows": 41698,
+      "retained_read_identities": 50722,
+      "retained_real_sequencing_read_windows": 166792,
+      "sixclass_test_rows": 250188,
+      "status": "ready",
+      "training_validation_overlap_in_retained_subset": 0
+    }
+  },
+  "paired_motif_csv": {
+    "rows": 6144,
+    "sha256": "0e68476e649870f5fa4b8f3e7e62c78457b1aec527469bf52f6abd583413b732"
+  }
+}

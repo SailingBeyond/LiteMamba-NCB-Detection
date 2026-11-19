@@ -1,0 +1,7 @@
+# Reuse the existing pytorch2.0.1 conda environment; do not replace CUDA/PyTorch.
+numpy<2
+pandas
+scipy
+scikit-learn
+matplotlib
+psutil

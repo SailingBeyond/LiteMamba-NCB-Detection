@@ -1,0 +1,15 @@
+{
+  "version": "1.0.4",
+  "engine_sha256": {
+    "IterDataset.py": "45ea750ba42eec91e5a3da949c40297865b0dfb6131748dac0ded65ee68f3d33",
+    "analyze_results.py": "e82740e2fec8f06135fac993ba31e8edf4596309a6fed0a0d3b0c52f3348a133",
+    "config_6_all_6.py": "be21bb60a08631ca8b746f3e152bf6daa0dba83c7eedd89f0e139f176736bb7e",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+    "model_benchmark_all.py": "2af018a878a1bc2bf12435f3f90de1930113a046b9c832ed651a9d6b60538c3f",
+    "precision_transition.py": "835aa02495cb826fbfadcb3682ae84515af18731ec8f5341ae2fa75ab24d42b5",
+    "train_all.py": "00c587e66b07b56a6ec9ae8d1d95e574ce011330442907250d77a36fa7ad940b"
+  },
+  "model_body_note": "All model parameter names, shapes, order and seeded initialization remain unchanged. Full forward/backward computation is FP32; saved CUDA GradScaler state is preserved without FP16 autocast.",
+  "retention_note": "Compact retention unchanged. Known v1.0.2 partial checkpoints adopt explicit audited precision metadata while preserving all model/Adam/scaler/RNG/history values.",
+  "numerical_precision_policy": "fp32_compute_preserved_scaler_v1"
+}

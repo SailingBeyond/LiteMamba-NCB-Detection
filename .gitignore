@@ -82,6 +82,8 @@ merged_outputs/
 *.tmp_no_header
 *.csv.gz
 *.tsv.gz
+!/paper_figures/figure2ef/data/**/roc_curve.csv.gz
+!/paper_figures/figure2ef/data/**/pr_curve.csv.gz
 
 # ============================================================
 # Training outputs and model checkpoints
@@ -101,6 +103,8 @@ runs/
 results/full_dataset/
 results/checkpoints/
 results/logs/
+/reproduced/
+/gatedconv_release_attachments/
 
 # ============================================================
 # Secrets and machine-specific configuration

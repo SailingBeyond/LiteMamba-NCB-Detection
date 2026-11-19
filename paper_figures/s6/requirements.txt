@@ -1,0 +1,4 @@
+matplotlib==3.10.8
+numpy==2.3.5
+pandas==2.2.3
+Pillow==13.0.0

@@ -1,0 +1,43 @@
+{
+  "source_artifacts": [
+    {
+      "name": "figure4_gatedconv_per6mer_core_v1_0_0.tar.gz",
+      "sha256": "d2a10dff4af571c268683d0f70f6732d9bbbae6ce712efe0e4e695ce85772087"
+    },
+    {
+      "name": "figure4_gated_comparison_v1_0_0(1).zip",
+      "sha256": "baa3121399429198bf480c2802fe8fd83c4ee0ad211e7b9cc3c5e85c591aae53"
+    },
+    {
+      "name": "sixclass_training_auto_v1_0_4(1).zip"
+    }
+  ],
+  "model": "gatedconv_target: legacy_gatedconv + target_attention",
+  "seeds": [
+    42,
+    2024,
+    2025
+  ],
+  "class_names": [
+    "A",
+    "T",
+    "C",
+    "G",
+    "X",
+    "Y"
+  ],
+  "external_file_count": 216,
+  "validation_file_count": 3,
+  "external_rows": 21774810,
+  "validation_rows": 1501128,
+  "total_rows": 23275938,
+  "plan_id": "f64a7b52b180f0b034aabfd33805fba8971c52aa3558dfc113d17805fdccbb34",
+  "plan_sha256": "b315a1ddbc8c499f45f9ed51132720a2563c463c833354a73c00f607ad8179d8",
+  "source_data_locally_available": "Raw full confidence probabilities are not present locally. Real argmax counts and configs were inspected; nonzero threshold behavior tested with synthetic fixtures only.",
+  "read_only_source": true,
+  "training_or_inference_performed": false,
+  "method_references": [
+    "https://scikit-learn.org/stable/modules/classification_threshold.html",
+    "https://nanoporetech.github.io/modkit/faq.html"
+  ]
+}

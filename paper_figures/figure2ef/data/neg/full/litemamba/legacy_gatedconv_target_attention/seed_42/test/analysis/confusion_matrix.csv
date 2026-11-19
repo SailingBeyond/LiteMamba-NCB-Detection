@@ -1,0 +1,9 @@
+probability_type,true_label,predicted_label,count
+raw,0,0,21096
+raw,0,1,527
+raw,1,0,631
+raw,1,1,20992
+calibrated,0,0,21096
+calibrated,0,1,527
+calibrated,1,0,631
+calibrated,1,1,20992

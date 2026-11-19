@@ -1,0 +1,4 @@
+feature_csv	metadata_tsv	cohort	template	role	file_strand	reference	source_dataset	run_id	template_group	pair_id
+/path/to/features__DNA01_pos.csv		XNA1-12	XNA1	control	pos	DNA01	unknown	unknown	unknown	unknown
+/path/to/features__XNA01_pos.csv	/path/to/features__XNA01_pos_meta.tsv	XNA1-12	XNA1	target	pos	XNA01	unknown	unknown	unknown	unknown
+/path/to/features_84Ds4-AA_neg.csv		XNA17-20	XNA17	target	neg	84Ds4-AA	unknown	unknown	unknown	unknown

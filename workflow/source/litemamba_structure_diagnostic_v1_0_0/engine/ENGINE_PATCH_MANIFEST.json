@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "upstream": "sixclass_training_auto_v1_0_4",
+  "changes": {
+    "model_benchmark_all.py": "Add global_attention_only with a zeroed direct-target branch, preserving nominal classifier width and unchanged full computation.",
+    "train_all.py": "Accept new readout CLI and record truthful per-control feature-definition metadata; all training algorithms unchanged.",
+    "run_all_4_models.py": "Opt-in fixed two-task shared resource queue with alias-to-actual-model mapping; no generic cross-structure aggregation.",
+    "equivalence_probe.py": "New CPU preflight verifying full equivalence and baseline checkpoint strict loading, reporting exact control definitions and parameter counts."
+  },
+  "source_files": [
+    {
+      "filename": "IterDataset.py",
+      "original_sha256": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+      "patched_sha256": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+      "changed": false
+    },
+    {
+      "filename": "analyze_results.py",
+      "original_sha256": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+      "patched_sha256": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+      "changed": false
+    },
+    {
+      "filename": "auto_find_and_train.py",
+      "original_sha256": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7",
+      "patched_sha256": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7",
+      "changed": false
+    },
+    {
+      "filename": "config_6_all_6.py",
+      "original_sha256": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+      "patched_sha256": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+      "changed": false
+    },
+    {
+      "filename": "cuda_device_probe.py",
+      "original_sha256": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+      "patched_sha256": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+      "changed": false
+    },
+    {
+      "filename": "dual_model_stress_test.py",
+      "original_sha256": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b",
+      "patched_sha256": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b",
+      "changed": false
+    },
+    {
+      "filename": "equivalence_probe.py",
+      "original_sha256": null,
+      "patched_sha256": "a32485a6f63b70519277d3dbc25a0862de76753ae87b98920ff76042eac86716",
+      "changed": true
+    },
+    {
+      "filename": "model_benchmark_all.py",
+      "original_sha256": "c4a5425daebdfa78756ac30bed358e987adb051127afc78c0942a9570a05a861",
+      "patched_sha256": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+      "changed": true
+    },
+    {
+      "filename": "prepare_group_holdout.py",
+      "original_sha256": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076",
+      "patched_sha256": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076",
+      "changed": false
+    },
+    {
+      "filename": "resource_scheduler.py",
+      "original_sha256": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+      "patched_sha256": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45",
+      "changed": false
+    },
+    {
+      "filename": "run_all_4_models.py",
+      "original_sha256": "c0d358710024af36d0d69b03c241d5a910ad96599db7fc45ea3efd5342d4939b",
+      "patched_sha256": "21636d867bea6b539ffd93628893c1bd473709895de442eddcb29dc892a98b0c",
+      "changed": true
+    },
+    {
+      "filename": "train_all.py",
+      "original_sha256": "6164ca0bad07e08c62a07e945b94d785e6e8c830402d51fb8ceb1c696ac9d825",
+      "patched_sha256": "ca8ae36910f33e334776f9e772ced15bbe5bb064d6cb6dd2a63081efac45b8cb",
+      "changed": true
+    },
+    {
+      "filename": "train_metadata_probe.py",
+      "original_sha256": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9",
+      "patched_sha256": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9",
+      "changed": false
+    }
+  ],
+  "local_pytorch_available": false,
+  "tests": {
+    "stdlib_queue_and_static_tests_passed": 7,
+    "torch_model_tests_skipped": 3,
+    "server_equivalence_preflight_required": true
+  }
+}

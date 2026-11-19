@@ -1,0 +1,97 @@
+{
+  "package": "figure4_gatedconv_threshold_collect_v1_0_0",
+  "files": {
+    "INPUT_CONTEXT.json": {
+      "bytes": 1555,
+      "sha256": "e5d81493d300e334930c11481fe5a7143878416fc7ae2673d6b1db60c6dbd5b0"
+    },
+    "METHODS.txt": {
+      "bytes": 8677,
+      "sha256": "03294986238fed75d8669fd0c71b5a93d953f434cd8f79877a4f40e327e993e4"
+    },
+    "README.txt": {
+      "bytes": 8666,
+      "sha256": "4491e5901056089968785c6567a7c71a8ac7950dc138ef0bff6dbe5b6e094218"
+    },
+    "VALIDATION.txt": {
+      "bytes": 1904,
+      "sha256": "3dca33761d6cad94765de76f25cb75526733250e3b2ee4e00c1472b7a2b3b2c1"
+    },
+    "check_inputs.sh": {
+      "bytes": 203,
+      "sha256": "70ebf5281e85183e03265a82d5c58b85df30f0e3fcc0353ad24336d7e44a2c3f"
+    },
+    "collect_thresholds.py": {
+      "bytes": 19845,
+      "sha256": "4deb8a15b0ae11f4b69f0c9d9896e4f82518c66e73b56e6ceda787ad35c4e1a3"
+    },
+    "launch_collect.py": {
+      "bytes": 2171,
+      "sha256": "fe7252cc100c852c4bc4c28d6ff2609e08037148cc9575dc49be2368ea9237b3"
+    },
+    "launch_collect.sh": {
+      "bytes": 186,
+      "sha256": "54e13d0d1c2d5f8fc135253d0805bf5418cb6877ca9471633160ef8749d957f2"
+    },
+    "reference_baseline.json": {
+      "bytes": 571067,
+      "sha256": "447b924ce53cc36e5501e0e2bd9d428962a650ee5b3fd6e6b2c60ee9d59e422b"
+    },
+    "run_collect.sh": {
+      "bytes": 190,
+      "sha256": "a9080799679502d6af1473ff17685f32d3dcd517e3bdaacef72584dfc1cd55f3"
+    },
+    "show_status.py": {
+      "bytes": 1523,
+      "sha256": "020e95b5875cc8de54a15dac3b91711756d0c197c759821e71a4fef107eef175"
+    },
+    "tests/fixture_threshold_sources.py": {
+      "bytes": 13942,
+      "sha256": "50c88de43aeed333a5bb7109df9a8b5289d2527860f9194c1e6c8c29aa69ba33"
+    },
+    "tests/run_validation.py": {
+      "bytes": 1780,
+      "sha256": "c09788f296144f150b5de679353216b675a46c4e7ce6bb155758057caba86f5d"
+    },
+    "tests/test_threshold_metrics.py": {
+      "bytes": 11834,
+      "sha256": "94760633a9af50ba9aa65c9b5cb53fe3752822124dd23e0b4897dc00b8883502"
+    },
+    "tests/test_threshold_sources.py": {
+      "bytes": 12167,
+      "sha256": "5e7718f3a5dea1673d2caf00a4db0b2bbca87fe7c756013c5327f3b388130167"
+    },
+    "tests/test_threshold_workflow.py": {
+      "bytes": 13853,
+      "sha256": "4de075060af5571526a6478c2150cad1c2f8dd3c89e004c915d746d12ac081c6"
+    },
+    "threshold_metrics.py": {
+      "bytes": 26355,
+      "sha256": "721b5633db246c71878df6ac9f35684af337d15ce06e2f4f38cd3cc6e8398b2f"
+    },
+    "threshold_sources.py": {
+      "bytes": 23244,
+      "sha256": "d9fffd3db21fd426302b25148d59a33cb39cd42dbf7d134751cbf09abcdda94b"
+    },
+    "vendor_contract.py": {
+      "bytes": 11234,
+      "sha256": "0815b61acabff42ea42f8b586861170bf76bcbfe703cdcdcdf9f1c160705fe69"
+    },
+    "verification/cpu_full_collection_integration.json": {
+      "bytes": 950,
+      "sha256": "98ae0c33d8b810bf9dca253530eab722c8b6126924499a584454af13208913f0"
+    },
+    "verification/independent_review.json": {
+      "bytes": 3901,
+      "sha256": "5db258ab817a204334295029f13781290086961fc097979c11ce501fdace3696"
+    },
+    "verification/real_argmax_baseline_verification.json": {
+      "bytes": 2042,
+      "sha256": "879761dc650bb615b4de57b71ac6655928378b5a02d381fc3eca1a90e71bcb75"
+    },
+    "verification/test_results.json": {
+      "bytes": 968,
+      "sha256": "a4a5fa64f6e125f73df3ba8abcdac3029cddd75d0d0cb56b1e4545e71459647c"
+    }
+  }
+}

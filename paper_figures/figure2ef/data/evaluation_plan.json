@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-10-27T08:16:46.487220+00:00",
+  "experiments": [
+    {
+      "run_id": "pos/full/litemamba/legacy_gatedconv_target_attention/seed_42",
+      "checkpoint_sha256": "177347e64ee7df0e68333862d0ac3841ba3dcac047426663d4e09b860125aae1"
+    },
+    {
+      "run_id": "pos/full/litemamba/legacy_gatedconv_target_attention/seed_43",
+      "checkpoint_sha256": "d06bb76dbe7d15677683fd03e947e5ca7f444649ede568229b77afb5b50ac10a"
+    },
+    {
+      "run_id": "pos/full/litemamba/legacy_gatedconv_target_attention/seed_44",
+      "checkpoint_sha256": "b1b057ea1aa9ff1c1bb68eba0f002c7667c4ee8cbe5a769a8cfe2f3bce594a75"
+    },
+    {
+      "run_id": "neg/full/litemamba/legacy_gatedconv_target_attention/seed_42",
+      "checkpoint_sha256": "ed6b462eb8a6cf6683f716912bcc48451c69568a1b5831ec7fea2c10ea925c11"
+    },
+    {
+      "run_id": "neg/full/litemamba/legacy_gatedconv_target_attention/seed_43",
+      "checkpoint_sha256": "1d8566f5b5c1eb08d767d201d8492d2ef97b6937ca7ffcfdff3a8b1cb5e0e17c"
+    },
+    {
+      "run_id": "neg/full/litemamba/legacy_gatedconv_target_attention/seed_44",
+      "checkpoint_sha256": "4278523b8f1dbdfcb19250020b126e4f8b16165482a9c2c9c637d54015441462"
+    }
+  ]
+}

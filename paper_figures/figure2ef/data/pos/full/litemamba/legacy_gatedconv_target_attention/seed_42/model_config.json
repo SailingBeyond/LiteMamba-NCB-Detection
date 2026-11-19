@@ -1,0 +1,10 @@
+{
+  "num_classes": 2,
+  "target_index": 3,
+  "seq_len": 6,
+  "model_dim": 96,
+  "num_blocks": 4,
+  "readout": "target_attention",
+  "litemamba_variant": "legacy_gatedconv",
+  "feature_scheme": "full"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scope": "Full-feature legacy_gatedconv + target_attention, CPU synthetic tensors; no dataset or server claims",
+  "binary_source_sha256": "8d484670d8cfe94c9e126c78d21d853afaad05372068be398d099e283ad089d7",
+  "final_model_source_sha256": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+  "kwargs": {
+    "model_dim": 96,
+    "target_index": 3,
+    "num_blocks": 4,
+    "state_dim": 16,
+    "ssm_bidirectional": true,
+    "litemamba_variant": "legacy_gatedconv",
+    "readout": "target_attention",
+    "feature_scheme": "full",
+    "dropout": 0.1,
+    "classifier_dropout": 0.2
+  },
+  "num_classes": 2,
+  "parameter_count": 301315,
+  "state_dict_keys_shapes_and_initialized_values_exactly_equal": true,
+  "eval_logits_embeddings_attention_exactly_equal": true,
+  "train_logits_gradients_batchnorm_state_exactly_equal": true,
+  "output_shape": [
+    3,
+    2
+  ],
+  "nonoperative_differences": [
+    "Metadata class names/onehot order documented in final module",
+    "Additional global_attention_only mode not selected",
+    "Feature-ablation inactive-branch requires_grad guards do not apply to full scheme",
+    "Extra positive-argument validation not changing valid setup"
+  ]
+}

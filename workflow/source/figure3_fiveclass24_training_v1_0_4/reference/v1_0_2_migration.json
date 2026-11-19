@@ -1,0 +1,29 @@
+{
+  "from_version": "1.0.2",
+  "to_version": "1.0.4",
+  "source_code_sha256": {
+    "run_fiveclass24.py": "183465f64a397637e441441c74b54016e8193d44001545ded09cbd331f6f3208",
+    "prepare_data.py": "668ce40939d83c70568371f511883bb95a689c2b889f199ce69a81e1f73046dc",
+    "summarize_fiveclass24.py": "6161b8f8383d2a83cde30b0f604c02dd375aa16682858931df868882488302d7",
+    "engine/IterDataset.py": "45ea750ba42eec91e5a3da949c40297865b0dfb6131748dac0ded65ee68f3d33",
+    "engine/analyze_results.py": "e82740e2fec8f06135fac993ba31e8edf4596309a6fed0a0d3b0c52f3348a133",
+    "engine/config_6_all_6.py": "be21bb60a08631ca8b746f3e152bf6daa0dba83c7eedd89f0e139f176736bb7e",
+    "engine/cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+    "engine/model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "engine/train_all.py": "873f02693353c0310a5e9146b6cd24db2c0f14f5051ef84a47d21447a8d56cc0",
+    "reference/balance_and_split_xna_pc_5class_by_read.py": "f9c1551c37d4657ddb8fa470e2a13e75573d905c94cc73fbf6a5767b21bea8de",
+    "reference/engine_identity.json": "317ca688f592a601ece5971116d5f73114cd9f73397dd4121e2a75584d15567e",
+    "reference/resume_fiveclass_export.py": "0d04dc75ef85c45f2d78c6c73680fc469e3c1471631204ad4449d53e467673e2",
+    "reference/v1_0_1_migration.json": "3ff5b472482a8c88f4f1e0eb09cffc4aa4ed26ecb0e65ce9d86dc99cfcf24400"
+  },
+  "engine_sha256": {
+    "IterDataset.py": "45ea750ba42eec91e5a3da949c40297865b0dfb6131748dac0ded65ee68f3d33",
+    "analyze_results.py": "e82740e2fec8f06135fac993ba31e8edf4596309a6fed0a0d3b0c52f3348a133",
+    "config_6_all_6.py": "be21bb60a08631ca8b746f3e152bf6daa0dba83c7eedd89f0e139f176736bb7e",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+    "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "train_all.py": "873f02693353c0310a5e9146b6cd24db2c0f14f5051ef84a47d21447a8d56cc0"
+  },
+  "numerical_precision_policy": "fp32_compute_preserved_scaler_v1",
+  "scope": "Only pre-test partial runs; formal model/Adam/scaler/RNG/history values preserved. Old validation monitor values remain legacy precision and are not falsely recomputed."
+}

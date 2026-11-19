@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "seed": 44,
+  "strand": "neg",
+  "metrics_by_split": {
+    "test": {
+      "raw": {
+        "accuracy": 0.9726911159413587,
+        "precision": 0.9756608339538347,
+        "recall": 0.9695694399482033,
+        "f1": 0.9726055994989677,
+        "auroc": 0.9950513002527672,
+        "auprc": 0.995277941303321,
+        "specificity": 0.9758127919345142,
+        "mcc": 0.9454006576582841,
+        "n": 43246,
+        "negative_support": 21623,
+        "positive_support": 21623,
+        "tn": 21100,
+        "fp": 523,
+        "fn": 658,
+        "tp": 20965
+      }
+    }
+  }
+}

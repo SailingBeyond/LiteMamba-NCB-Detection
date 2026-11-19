@@ -1,0 +1,164 @@
+{
+  "version": "1.0.4",
+  "created_at": "2026-10-28T14:51:51.388774+08:00",
+  "purpose": "Full FP32 forward/backward with original GradScaler state retained; automatic real-fault gate before backed-up v1.0.2 checkpoint metadata adoption and24-job resume",
+  "numerical_precision_policy": "fp32_compute_preserved_scaler_v1",
+  "actual_autocast_enabled": false,
+  "original_checkpoint_state_values_preserved": true,
+  "default_max_parallel": 1,
+  "server_GPU_validation": "Required at launch; local verification is CPU only",
+  "files": {
+    "README_中文.md": {
+      "size": 5621,
+      "sha256": "af2869d1ffbe1cc262415584e5ef8a71543ca50bf0a4f842c5c718fb1c4c8a26"
+    },
+    "VALIDATION.md": {
+      "size": 2068,
+      "sha256": "8ba331494c7e83598cae1d73c394169793d8e373cdc46e81d95bfb9d64dfd4eb"
+    },
+    "engine/IterDataset.py": {
+      "size": 56532,
+      "sha256": "45ea750ba42eec91e5a3da949c40297865b0dfb6131748dac0ded65ee68f3d33"
+    },
+    "engine/analyze_results.py": {
+      "size": 64349,
+      "sha256": "e82740e2fec8f06135fac993ba31e8edf4596309a6fed0a0d3b0c52f3348a133"
+    },
+    "engine/config_6_all_6.py": {
+      "size": 5304,
+      "sha256": "be21bb60a08631ca8b746f3e152bf6daa0dba83c7eedd89f0e139f176736bb7e"
+    },
+    "engine/cuda_device_probe.py": {
+      "size": 7409,
+      "sha256": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1"
+    },
+    "engine/model_benchmark_all.py": {
+      "size": 22801,
+      "sha256": "2af018a878a1bc2bf12435f3f90de1930113a046b9c832ed651a9d6b60538c3f"
+    },
+    "engine/precision_transition.py": {
+      "size": 16787,
+      "sha256": "835aa02495cb826fbfadcb3682ae84515af18731ec8f5341ae2fa75ab24d42b5"
+    },
+    "engine/train_all.py": {
+      "size": 99648,
+      "sha256": "00c587e66b07b56a6ec9ae8d1d95e574ce011330442907250d77a36fa7ad940b"
+    },
+    "launch.py": {
+      "size": 2058,
+      "sha256": "d41b05c696cc92ac7fa902c47a525ee7294f9f73f7faab945fb7cee8d6d6bb25"
+    },
+    "launch_all.sh": {
+      "size": 185,
+      "sha256": "680dbf23938b19a8c27bf6f72e72de5634e4b9e89044ada97e0bfbe5a35c6897"
+    },
+    "launch_evaluate.sh": {
+      "size": 190,
+      "sha256": "20f38e9dc281d3b5d6026e4ecc3af677acf749cc5d28d6d5790a10ead86b1643"
+    },
+    "launch_freeze.sh": {
+      "size": 188,
+      "sha256": "cf9c2e2d4c3d67845b0cc8da5a80c49a8c949d9a5ce1f54f9de0c089eea721ed"
+    },
+    "launch_prepare.sh": {
+      "size": 189,
+      "sha256": "110f410a87139e68ba64dc9f003cb7e0a927580c4e24da964738e3f0328fddca"
+    },
+    "launch_summary.sh": {
+      "size": 189,
+      "sha256": "4fcc877d9d7d30c20c7b0b93e1311678bcca8a5ebfcb29199cd533731a6bd355"
+    },
+    "launch_train.sh": {
+      "size": 187,
+      "sha256": "830fbc2777c59a88ed1c22735d94577021ac268240dd13cfd7ab823354342606"
+    },
+    "prepare_data.py": {
+      "size": 29970,
+      "sha256": "668ce40939d83c70568371f511883bb95a689c2b889f199ce69a81e1f73046dc"
+    },
+    "reference/balance_and_split_xna_pc_5class_by_read.py": {
+      "size": 61958,
+      "sha256": "f9c1551c37d4657ddb8fa470e2a13e75573d905c94cc73fbf6a5767b21bea8de"
+    },
+    "reference/engine_identity.json": {
+      "size": 1178,
+      "sha256": "cfc6057d4ce708efd9758ea7109d20dfa70dc36c0f4ca3c22769e0e4a2b7abff"
+    },
+    "reference/precision_fault_reference.json": {
+      "size": 2067,
+      "sha256": "ab7cf3b480163ec6f4e2663a389bf3474d6047f04973094b5cbdfbdc9fd01a85"
+    },
+    "reference/resume_fiveclass_export.py": {
+      "size": 36034,
+      "sha256": "0d04dc75ef85c45f2d78c6c73680fc469e3c1471631204ad4449d53e467673e2"
+    },
+    "reference/v1_0_1_migration.json": {
+      "size": 1441,
+      "sha256": "3ff5b472482a8c88f4f1e0eb09cffc4aa4ed26ecb0e65ce9d86dc99cfcf24400"
+    },
+    "reference/v1_0_2_migration.json": {
+      "size": 2259,
+      "sha256": "27fdaece527a1cc895cee5508ce02b656a7f05def4efdd4b6ed817118bda8d38"
+    },
+    "requirements.txt": {
+      "size": 218,
+      "sha256": "1a8130e61ebca7d674e3574dcd5ff2c3b32bd247fed07f9f672ab3f3cd042f03"
+    },
+    "run_all.sh": {
+      "size": 194,
+      "sha256": "569d21c07c916ce1951cf2e64bbc000c9fa6d351b6a75d323a7bbae16283f449"
+    },
+    "run_evaluate.sh": {
+      "size": 199,
+      "sha256": "a78ea56d775421c5529a51d3312563e3f1265f9b44d5b6f2ee61185317b8b9e8"
+    },
+    "run_fiveclass24.py": {
+      "size": 49051,
+      "sha256": "e034627040daf2a1be90fa526890cd810b7c44480fcc643baeab83d050750e59"
+    },
+    "run_freeze.sh": {
+      "size": 197,
+      "sha256": "bcdae1ac95ed3710d1eb0967a064112b5a029f8ae6c8cbe46f437b98f3e8220f"
+    },
+    "run_prepare.sh": {
+      "size": 198,
+      "sha256": "e5147d6632e27e2fc063e01f8fad5da961207186767e121b209c1985e3d7af67"
+    },
+    "run_summary.sh": {
+      "size": 198,
+      "sha256": "6be50d770ba0db65a5f8fc528336d71e651cffa05d2d6abf2a08d7ff16841847"
+    },
+    "run_train.sh": {
+      "size": 196,
+      "sha256": "07126c7c33f7fda359ba143cd1b4939ccbf250e135a2644f2b2ae866bbe4c5f1"
+    },
+    "summarize_fiveclass24.py": {
+      "size": 40265,
+      "sha256": "6161b8f8383d2a83cde30b0f604c02dd375aa16682858931df868882488302d7"
+    },
+    "validate_precision_fix.py": {
+      "size": 3994,
+      "sha256": "050ef6b9e28b7d2ca5d612cb83630414a30049a13cf0f54b1f1fcc05575942f2"
+    },
+    "validate_precision_worker.py": {
+      "size": 10038,
+      "sha256": "01cbdd5920ee7b896b110c143baf644b59b44a6c1a1eb76b47c54f210f90121c"
+    },
+    "verification/engine_validation.json": {
+      "size": 1294,
+      "sha256": "c4618a5dd3548d6590cbf91ddbb868eff880e3ebb9db0c80f303d48aa1ffad05"
+    },
+    "verification/integration_validation.json": {
+      "size": 2654,
+      "sha256": "f9c5b9409b102aee8be91ee61b929649d31c31425989ad588b9eeae76f8ff836"
+    },
+    "verification/migration_validation.json": {
+      "size": 691,
+      "sha256": "4cbcae9e4ac3bba0f3a508054f31596e7e91d051f662d94c0655434c73627e3b"
+    },
+    "verification/strict_resume_validation.json": {
+      "size": 848,
+      "sha256": "ecbc484abdac5c95d73758f2ffbf5576c7f05a7f344f70389585a121c26fca0a"
+    }
+  }
+}

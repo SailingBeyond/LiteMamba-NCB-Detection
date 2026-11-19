@@ -1,0 +1,202 @@
+{
+  "version": "1.1.0",
+  "created_date_shanghai": "2026-10-24",
+  "purpose": "Three-seed confirmation of both fixed structural controls; five old results reused read-only, four new trainings",
+  "seeds": [
+    42,
+    2024,
+    2025
+  ],
+  "new_tasks": [
+    {
+      "experiment": "gatedconv_target",
+      "seed": 2024
+    },
+    {
+      "experiment": "ssm_global_only",
+      "seed": 2024
+    },
+    {
+      "experiment": "gatedconv_target",
+      "seed": 2025
+    },
+    {
+      "experiment": "ssm_global_only",
+      "seed": 2025
+    }
+  ],
+  "reused_results": 5,
+  "summary_results": 9,
+  "full_training_repeated": false,
+  "test_inference": false,
+  "checks_passed_locally": 56,
+  "pytorch_model_tests_skipped_locally": 3,
+  "server_equivalence_preflight_required": true,
+  "files": [
+    {
+      "path": "ENGINE_SOURCE_MANIFEST.json",
+      "size_bytes": 2596,
+      "sha256": "3ef39a8514b790d8f650a5f6ae86d17906f22e64dc0cfdd9657f43b55f829fef"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 8184,
+      "sha256": "94b2c03f12536d3ccec329354f981433bc43329be8f21f5c5f337587a91fcec9"
+    },
+    {
+      "path": "VALIDATION.md",
+      "size_bytes": 2727,
+      "sha256": "75c837812f86131d23c1ac2d6df3d674c27f415eba7d7edb2b719fefcf78e497"
+    },
+    {
+      "path": "diagnostic_common.py",
+      "size_bytes": 24764,
+      "sha256": "bb76f78dfce527b9dcb5ca389007306f062d20502e554c4ec86512f8d61dbf69"
+    },
+    {
+      "path": "engine/ENGINE_PATCH_MANIFEST.json",
+      "size_bytes": 5331,
+      "sha256": "65d8ee572157c9978e4cc4f0ded710dcbbb52dd75482e6356044482de3007f0e"
+    },
+    {
+      "path": "engine/IterDataset.py",
+      "size_bytes": 51085,
+      "sha256": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9"
+    },
+    {
+      "path": "engine/analyze_results.py",
+      "size_bytes": 56526,
+      "sha256": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d"
+    },
+    {
+      "path": "engine/auto_find_and_train.py",
+      "size_bytes": 43455,
+      "sha256": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7"
+    },
+    {
+      "path": "engine/config_6_all_6.py",
+      "size_bytes": 4328,
+      "sha256": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb"
+    },
+    {
+      "path": "engine/cuda_device_probe.py",
+      "size_bytes": 7409,
+      "sha256": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1"
+    },
+    {
+      "path": "engine/dual_model_stress_test.py",
+      "size_bytes": 18703,
+      "sha256": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b"
+    },
+    {
+      "path": "engine/equivalence_probe.py",
+      "size_bytes": 14838,
+      "sha256": "a32485a6f63b70519277d3dbc25a0862de76753ae87b98920ff76042eac86716"
+    },
+    {
+      "path": "engine/model_benchmark_all.py",
+      "size_bytes": 21699,
+      "sha256": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806"
+    },
+    {
+      "path": "engine/prepare_group_holdout.py",
+      "size_bytes": 20568,
+      "sha256": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076"
+    },
+    {
+      "path": "engine/requirements.txt",
+      "size_bytes": 245,
+      "sha256": "60499bda24353519dce33b601bd6e894b5631c6120a40af575703492238f742e"
+    },
+    {
+      "path": "engine/resource_scheduler.py",
+      "size_bytes": 21052,
+      "sha256": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45"
+    },
+    {
+      "path": "engine/run_all_4_models.py",
+      "size_bytes": 59217,
+      "sha256": "9e4bd7fb183dff0c9e2fc3ae90bba49ae26453f46e2be3e398581612838fcf24"
+    },
+    {
+      "path": "engine/tests/test_structure_engine.py",
+      "size_bytes": 6721,
+      "sha256": "4623ec880a6f4968c0ac4441aca8bd52b41653bea69d6269ccbee8a8546d20a2"
+    },
+    {
+      "path": "engine/train_all.py",
+      "size_bytes": 83000,
+      "sha256": "aa4a380cf370848b8f11104b78055719160a4aaa3bdf6dff037161fcb19728a1"
+    },
+    {
+      "path": "engine/train_metadata_probe.py",
+      "size_bytes": 21702,
+      "sha256": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9"
+    },
+    {
+      "path": "legacy_summary.py",
+      "size_bytes": 16488,
+      "sha256": "f33a38e11636d0cae549ba07d4944f6e2bbb50d2a118f9af021635326543e9d8"
+    },
+    {
+      "path": "run_structure.py",
+      "size_bytes": 35616,
+      "sha256": "f8a473e7d6cf5fb2275d5a2248bc2609c57889207d5652067f565fb14fc7060e"
+    },
+    {
+      "path": "run_structure.sh",
+      "size_bytes": 1741,
+      "sha256": "8da78d916ea8343736bfedea56b639a5864cf05ed3f393946b87eb3b111a346a"
+    },
+    {
+      "path": "summarize_structure.py",
+      "size_bytes": 38990,
+      "sha256": "baf8d4e7fab9686f9dfc4a6f9bde093482e6839d76f2390b5a332c49fb929f65"
+    },
+    {
+      "path": "tests/test_confirm_shell.py",
+      "size_bytes": 3178,
+      "sha256": "0e825e7a942933c5b29b79a2d28d4a5f2601c16e4422969a8181916f9e29533e"
+    },
+    {
+      "path": "tests/test_confirm_summary.py",
+      "size_bytes": 11466,
+      "sha256": "ab65c25cdeae3d3103a800c595458bf1cee441bd169037487967a26682d4e7e3"
+    },
+    {
+      "path": "tests/test_engine_queue_confirmation.py",
+      "size_bytes": 3926,
+      "sha256": "54f2724e2e2ac2156e7fca52f6a71f5aa98a1ed810e03da7e203bf9a10837ad1"
+    },
+    {
+      "path": "tests/test_epoch_io_commit.py",
+      "size_bytes": 6605,
+      "sha256": "d13c9839febaf41271d45083bf23f69a2cbbde9d3e93af0e0624a5757fc3f566"
+    },
+    {
+      "path": "tests/test_launcher.py",
+      "size_bytes": 31020,
+      "sha256": "ab26b5ff04e53ff0abccfffe1ef6b53cd09f3d6c2369f294cce9c83e18e9cf5a"
+    },
+    {
+      "path": "validation_evidence/confirmation_tests.log",
+      "size_bytes": 7867,
+      "sha256": "fff4a9a2349e55e4a59bae091a59ba1771ec2eecee48f7938ef757879259c7cb"
+    },
+    {
+      "path": "validation_evidence/engine_audit.txt",
+      "size_bytes": 2993,
+      "sha256": "777c7e2745149e91411dac9f3c995f3d6a22ce20af12a127240c21a4bcbddd46"
+    },
+    {
+      "path": "validation_evidence/engine_tests.log",
+      "size_bytes": 1944,
+      "sha256": "043d3877fba0f8bbac6101e711b7ef147f8bd8610534eeb30aecb9ebc97ac54d"
+    },
+    {
+      "path": "validation_evidence/validation_summary.json",
+      "size_bytes": 592,
+      "sha256": "70d2506176a9db48fd8530db16245d23543d73a42934dd120378c3b13a7bd948"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "numerical_engine_source": "gatedconv_ablation12_v1_0_0/engine; previously validated final GatedConv",
+  "model_name": "GatedConv",
+  "parameter_count": 301831,
+  "model_variant": "legacy_gatedconv",
+  "readout": "target_attention",
+  "target_index": 3,
+  "engine_sha256": {
+    "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+    "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+    "config_6_all_6.py": "821474db91a238f7b36f5f1e13af943588674662ed4dc49d691daee914ff662f",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+    "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "train_all.py": "793970621b669d6fd3aa00aedb37b87e8ce35d40b736337924330ddc41f7b867"
+  },
+  "archived_config_sha256": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb"
+}
