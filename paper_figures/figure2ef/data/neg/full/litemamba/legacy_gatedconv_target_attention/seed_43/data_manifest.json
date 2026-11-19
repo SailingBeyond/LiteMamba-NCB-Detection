@@ -1,0 +1,50 @@
+{
+  "input_fingerprints": {
+    "test": {
+      "feature": {
+        "sha256": "3a1c378a7163fcd00a61d10474cb0cdd96834c3c538524b5496161fd0a5daae5",
+        "size": 38232490
+      },
+      "metadata": {
+        "sha256": "7b047d0a3ac3bc3493b5a495671104fd32ed35692bc075b47a6980dd9df2c962",
+        "size": 9423921
+      }
+    }
+  },
+  "preprocessing": {
+    "base_order": [
+      "A",
+      "C",
+      "T",
+      "G",
+      "N"
+    ],
+    "cache_version": "binary-read-held-out-v1.5",
+    "dwell_divisor": 60.0,
+    "feature_columns": [
+      "kmer",
+      "mean",
+      "std",
+      "median",
+      "dwell",
+      "quality",
+      "mismatch",
+      "insertion",
+      "deletion",
+      "signal",
+      "label"
+    ],
+    "input_label_policy": "strict_binary_0_1",
+    "label_values": [
+      0,
+      1
+    ],
+    "mask_base": "N",
+    "mask_index": 3,
+    "quality_divisor": 50.0,
+    "raw_signal_len": 30,
+    "seq_len": 6,
+    "signal_rectification": "symmetric_zero_pad_or_floor_linspace_indices",
+    "signal_round_decimals": 4
+  }
+}

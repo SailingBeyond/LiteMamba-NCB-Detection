@@ -1,0 +1,82 @@
+{
+  "experiments": [
+    {
+      "run_id": "pos/full/litemamba/legacy_gatedconv_target_attention/seed_42",
+      "requested_config": {
+        "strand": "pos",
+        "seed": 42,
+        "model_type": "litemamba",
+        "litemamba_variant": "legacy_gatedconv",
+        "readout": "target_attention",
+        "feature_scheme": "full"
+      },
+      "train_queue_status": "complete",
+      "evaluation_queue_status": "complete"
+    },
+    {
+      "run_id": "pos/full/litemamba/legacy_gatedconv_target_attention/seed_43",
+      "requested_config": {
+        "strand": "pos",
+        "seed": 43,
+        "model_type": "litemamba",
+        "litemamba_variant": "legacy_gatedconv",
+        "readout": "target_attention",
+        "feature_scheme": "full"
+      },
+      "train_queue_status": "complete",
+      "evaluation_queue_status": "complete"
+    },
+    {
+      "run_id": "pos/full/litemamba/legacy_gatedconv_target_attention/seed_44",
+      "requested_config": {
+        "strand": "pos",
+        "seed": 44,
+        "model_type": "litemamba",
+        "litemamba_variant": "legacy_gatedconv",
+        "readout": "target_attention",
+        "feature_scheme": "full"
+      },
+      "train_queue_status": "complete",
+      "evaluation_queue_status": "complete"
+    },
+    {
+      "run_id": "neg/full/litemamba/legacy_gatedconv_target_attention/seed_42",
+      "requested_config": {
+        "strand": "neg",
+        "seed": 42,
+        "model_type": "litemamba",
+        "litemamba_variant": "legacy_gatedconv",
+        "readout": "target_attention",
+        "feature_scheme": "full"
+      },
+      "train_queue_status": "complete",
+      "evaluation_queue_status": "complete"
+    },
+    {
+      "run_id": "neg/full/litemamba/legacy_gatedconv_target_attention/seed_43",
+      "requested_config": {
+        "strand": "neg",
+        "seed": 43,
+        "model_type": "litemamba",
+        "litemamba_variant": "legacy_gatedconv",
+        "readout": "target_attention",
+        "feature_scheme": "full"
+      },
+      "train_queue_status": "complete",
+      "evaluation_queue_status": "complete"
+    },
+    {
+      "run_id": "neg/full/litemamba/legacy_gatedconv_target_attention/seed_44",
+      "requested_config": {
+        "strand": "neg",
+        "seed": 44,
+        "model_type": "litemamba",
+        "litemamba_variant": "legacy_gatedconv",
+        "readout": "target_attention",
+        "feature_scheme": "full"
+      },
+      "train_queue_status": "complete",
+      "evaluation_queue_status": "complete"
+    }
+  ]
+}

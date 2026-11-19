@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "purpose": "Captured X/gatedconv/seed42 epoch72 final-Linear FP16 overflow; exact reference payload binding",
+  "reference_artifacts": {
+    "fault_state.pt": {
+      "size": 3730825,
+      "sha256": "50fdfa47392e7dbbcbc04f54229f7191916e80a1c00352ac4513c712982ef44c"
+    },
+    "failed_batch.npz": {
+      "size": 91183,
+      "sha256": "c0edfbfb1fe195f9a0cf2c047ec929151b166df4d8c0f41cc6928640107db283"
+    }
+  },
+  "checkpoint_identity": {
+    "path": "/path/to/revision-results/figure3_fiveclass24_results_v1_0_0/scenarios/X/runs/gatedconv/seed_42/last_checkpoint.pt",
+    "sha256": "def3d8e966a0030e7b63a6850b1a5e08fb3a98da68803a96b6b7c47497b27e57",
+    "epoch": 71,
+    "best_epoch": 71,
+    "next_epoch": 72,
+    "optimizer_lrs": [
+      0.000125
+    ],
+    "model_kwargs": {
+      "model_dim": 96,
+      "target_index": 3,
+      "num_blocks": 4,
+      "state_dim": 16,
+      "ssm_bidirectional": true,
+      "litemamba_variant": "legacy_gatedconv",
+      "readout": "target_attention",
+      "feature_scheme": "full",
+      "dropout": 0.1,
+      "classifier_dropout": 0.2,
+      "nhead": 4,
+      "num_layers": 2,
+      "gru_hidden": 64
+    },
+    "source_sha256": {
+      "IterDataset.py": "45ea750ba42eec91e5a3da949c40297865b0dfb6131748dac0ded65ee68f3d33",
+      "analyze_results.py": "e82740e2fec8f06135fac993ba31e8edf4596309a6fed0a0d3b0c52f3348a133",
+      "config_6_all_6.py": "be21bb60a08631ca8b746f3e152bf6daa0dba83c7eedd89f0e139f176736bb7e",
+      "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+      "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+      "train_all.py": "873f02693353c0310a5e9146b6cd24db2c0f14f5051ef84a47d21447a8d56cc0"
+    }
+  },
+  "historical_failure": {
+    "epoch": 72,
+    "batch_number": 21333,
+    "first_nonfinite_layer": "cls.3",
+    "AMP_logits_inf_count": 3,
+    "full_FP32_min_logit": -74476.171875
+  },
+  "default_probe_root": "/path/to/revision-results/figure3_fiveclass_nonfinite_probe_v1_0_0"
+}

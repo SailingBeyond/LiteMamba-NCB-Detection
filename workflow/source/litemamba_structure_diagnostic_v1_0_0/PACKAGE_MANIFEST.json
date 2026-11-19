@@ -1,0 +1,157 @@
+{
+  "version": "1.0.0",
+  "created_date_shanghai": "2026-10-23",
+  "purpose": "Two fixed seed42 structural diagnostics; one shared resource queue; existing full reused",
+  "new_tasks": [
+    "gatedconv_target",
+    "ssm_global_only"
+  ],
+  "seed": 42,
+  "full_training_repeated": false,
+  "test_inference": false,
+  "non_pytorch_checks_passed": 49,
+  "pytorch_model_tests_skipped_locally": 3,
+  "server_equivalence_preflight_required": true,
+  "files": [
+    {
+      "path": "ENGINE_SOURCE_MANIFEST.json",
+      "size_bytes": 1691,
+      "sha256": "cdffcbd41a73837de89a27e9eb441703e7482a9233b279ef0fbeafee45e50e3b"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 8566,
+      "sha256": "f1be8772813bacbbe694386460060bbdc97dadc144f1391657ca43fff3741f94"
+    },
+    {
+      "path": "VALIDATION.md",
+      "size_bytes": 2120,
+      "sha256": "d881a8019a3abded709cf5d4b780e523cbba409c39dbc1da50324a3211b6ee8c"
+    },
+    {
+      "path": "diagnostic_common.py",
+      "size_bytes": 24764,
+      "sha256": "bb76f78dfce527b9dcb5ca389007306f062d20502e554c4ec86512f8d61dbf69"
+    },
+    {
+      "path": "engine/ENGINE_PATCH_MANIFEST.json",
+      "size_bytes": 4281,
+      "sha256": "ca97344f7580a29fb519e47ca935ce9071902ec65eb3bb01a28561f5f0a3f285"
+    },
+    {
+      "path": "engine/IterDataset.py",
+      "size_bytes": 51085,
+      "sha256": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9"
+    },
+    {
+      "path": "engine/analyze_results.py",
+      "size_bytes": 56526,
+      "sha256": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d"
+    },
+    {
+      "path": "engine/auto_find_and_train.py",
+      "size_bytes": 43455,
+      "sha256": "28ca4ac1dee3fac3663a627a22ba4de0cd2237714fa23ba389cff4f356318ec7"
+    },
+    {
+      "path": "engine/config_6_all_6.py",
+      "size_bytes": 4328,
+      "sha256": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb"
+    },
+    {
+      "path": "engine/cuda_device_probe.py",
+      "size_bytes": 7409,
+      "sha256": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1"
+    },
+    {
+      "path": "engine/dual_model_stress_test.py",
+      "size_bytes": 18703,
+      "sha256": "eb4c09d0854f0ee41cc492060d9fa6fc823a1ec96af368d86d5cf3720eaeb36b"
+    },
+    {
+      "path": "engine/equivalence_probe.py",
+      "size_bytes": 14838,
+      "sha256": "a32485a6f63b70519277d3dbc25a0862de76753ae87b98920ff76042eac86716"
+    },
+    {
+      "path": "engine/model_benchmark_all.py",
+      "size_bytes": 21699,
+      "sha256": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806"
+    },
+    {
+      "path": "engine/prepare_group_holdout.py",
+      "size_bytes": 20568,
+      "sha256": "09cc6634c216b4e9074e882ac9b7438e2cf99e137d5723d104a5c7385844e076"
+    },
+    {
+      "path": "engine/requirements.txt",
+      "size_bytes": 245,
+      "sha256": "60499bda24353519dce33b601bd6e894b5631c6120a40af575703492238f742e"
+    },
+    {
+      "path": "engine/resource_scheduler.py",
+      "size_bytes": 21052,
+      "sha256": "a5aa3b54b5adb616a7b0ec4d30166aa02872ff197f5444e50f933619980a0b45"
+    },
+    {
+      "path": "engine/run_all_4_models.py",
+      "size_bytes": 58791,
+      "sha256": "21636d867bea6b539ffd93628893c1bd473709895de442eddcb29dc892a98b0c"
+    },
+    {
+      "path": "engine/tests/test_structure_engine.py",
+      "size_bytes": 6721,
+      "sha256": "4623ec880a6f4968c0ac4441aca8bd52b41653bea69d6269ccbee8a8546d20a2"
+    },
+    {
+      "path": "engine/train_all.py",
+      "size_bytes": 81877,
+      "sha256": "ca8ae36910f33e334776f9e772ced15bbe5bb064d6cb6dd2a63081efac45b8cb"
+    },
+    {
+      "path": "engine/train_metadata_probe.py",
+      "size_bytes": 21702,
+      "sha256": "6c84620ca3b64206b3dcdddd324e6bae8fda3a18221b9273d5650238c8db5ec9"
+    },
+    {
+      "path": "legacy_summary.py",
+      "size_bytes": 16488,
+      "sha256": "f33a38e11636d0cae549ba07d4944f6e2bbb50d2a118f9af021635326543e9d8"
+    },
+    {
+      "path": "run_structure.py",
+      "size_bytes": 20005,
+      "sha256": "871f514ee350fd1c6d141129c6e97f3d882b5d47a4c9d6cd0579b81800fbfadb"
+    },
+    {
+      "path": "run_structure.sh",
+      "size_bytes": 1683,
+      "sha256": "3e83ed216274d57bf22b8d839933938210b5846ef05211fd8eded2e331610c1a"
+    },
+    {
+      "path": "summarize_structure.py",
+      "size_bytes": 24439,
+      "sha256": "49daeafa1b3c5c20efcb6070e93dd902e7f04338d35207fea8a83462bbd26795"
+    },
+    {
+      "path": "tests/test_launcher.py",
+      "size_bytes": 25205,
+      "sha256": "73d1740dfb691486314f79e4b042502928c594fb620ae0ecf89952b3d6194d86"
+    },
+    {
+      "path": "tests/test_summary.py",
+      "size_bytes": 13694,
+      "sha256": "5236a8b6df4755b6d688f202a68e5d597ab225035a0cc8847d0f7c019490bde6"
+    },
+    {
+      "path": "validation_evidence/engine.log",
+      "size_bytes": 1944,
+      "sha256": "b82bf4bd6dd096acfb139bfc26b92051140d165adf95e7693762927a897999f7"
+    },
+    {
+      "path": "validation_evidence/launcher_and_summary.log",
+      "size_bytes": 6972,
+      "sha256": "0bf81be8eb8b9d45fa897884af499b9e720ecf129b63eb2bc099c7785ee4cccd"
+    }
+  ]
+}

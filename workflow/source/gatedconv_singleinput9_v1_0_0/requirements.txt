@@ -1,0 +1,10 @@
+# 优先复用现有 pytorch2.0.1 环境，不需要重新安装或升级 PyTorch。
+# 仅供新建环境或补齐缺失依赖；先准备与服务器 CUDA 驱动匹配的 PyTorch。
+# Python >= 3.9；旧 PyTorch 2.0.1 的 NumPy 张量桥接要求 numpy < 2。
+torch>=2.0.1
+numpy>=1.24,<2
+pandas>=1.5
+scipy>=1.10
+scikit-learn>=1.2
+matplotlib>=3.7
+joblib>=1.2

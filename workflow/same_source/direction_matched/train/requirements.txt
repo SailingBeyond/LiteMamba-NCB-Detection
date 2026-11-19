@@ -1,0 +1,8 @@
+# Reuse the existing pytorch2.0.1 environment; do not upgrade it for this control.
+# CUDA/CPU torch build must match the already working server installation.
+torch>=2.0.1
+numpy>=1.23,<2
+pandas>=1.5
+scipy>=1.9
+scikit-learn>=1.2
+matplotlib>=3.5

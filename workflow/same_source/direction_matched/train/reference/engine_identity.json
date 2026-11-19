@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "task": "CPLX_direction_matched_fiveclass",
+  "engine_sha256": {
+    "IterDataset.py": "1570ef72c8a95f054bec61df3bab904d60e5c7ea6dcd66fa596a65d53f4e247e",
+    "analyze_results.py": "c2ea917e5e9b481d808e75d459d9b3b3621c803b2aa7f11c64fb21c03a3cde3e",
+    "config_6_all_6.py": "d4fbf17a2a6bc01f5545c7a8a4d68f208a03b361f84918b31be0d7cd0cfd7262",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+    "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "train_all.py": "08fbc95fc987c6f34cb320e039a2d56de9c2a0abd3fe650649c867bbf1679eb4"
+  },
+  "original_sixclass_engine_sha256": {
+    "IterDataset.py": "fe34d1330600610dbebb11de1a30752123a2108ce4d435621cd8f7cf128e75a9",
+    "analyze_results.py": "5d6a47690c8b82304da00a342a742f817964f5c88e9dba69a47c441eb9b8846d",
+    "config_6_all_6.py": "99b3a3df6db36dee13282143d2c765dcf3a839445bd6b4357fb425f693421dfb",
+    "cuda_device_probe.py": "23787a3f90f3ef191f9e24521f0a46712458b87b557f9c305b03e2a8c15e42e1",
+    "model_benchmark_all.py": "ca14b49d514a95dfa3443f019bb60d475ed5cf2feb7e1cd161d42ea000b8f806",
+    "train_all.py": "793970621b669d6fd3aa00aedb37b87e8ce35d40b736337924330ddc41f7b867"
+  },
+  "model_body_byte_identical": true,
+  "model_output_classes": 5,
+  "fixed_scenarios": {
+    "X_plus": [
+      "A",
+      "T",
+      "C",
+      "G",
+      "X"
+    ],
+    "Y_minus": [
+      "A",
+      "T",
+      "C",
+      "G",
+      "Y"
+    ]
+  },
+  "adaptation_scope": "Fiveclass task definitions, provenance, dimensionality and label validation; final GatedConv architecture implementation unchanged.",
+  "export_integrity": "Completion requires all primary arrays/predictions/analysis outputs and SHA256; reuse refuses missing/corrupted files without silently repeating inference.",
+  "archived_config_sha256": "640ccc4008704d1faa978bab60f295558747a496c5266df2c94a8e021a3bfd5a"
+}

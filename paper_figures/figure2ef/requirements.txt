@@ -1,0 +1,3 @@
+# Reads saved analysis only. PyTorch / CUDA / scikit-learn are not required.
+numpy>=1.23
+matplotlib>=3.5

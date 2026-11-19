@@ -1,0 +1,8 @@
+# Preserve the already working pytorch2.0.1 server environment.
+# Install a CUDA/CPU PyTorch build appropriate for your server separately.
+torch>=2.0.1
+numpy>=1.23,<2
+pandas>=1.5
+scipy>=1.9
+scikit-learn>=1.2
+matplotlib>=3.5

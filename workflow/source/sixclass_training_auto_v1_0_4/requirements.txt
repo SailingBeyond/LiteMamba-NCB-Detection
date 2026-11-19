@@ -1,0 +1,9 @@
+# Python >= 3.9. Install the CPU/CUDA PyTorch build matching the server first.
+torch>=2.0.1
+# PyTorch 2.0.1 predates NumPy 2; preserve its NumPy tensor bridge.
+numpy>=1.24,<2
+pandas>=1.5
+scipy>=1.10
+scikit-learn>=1.2
+matplotlib>=3.7
+joblib>=1.2

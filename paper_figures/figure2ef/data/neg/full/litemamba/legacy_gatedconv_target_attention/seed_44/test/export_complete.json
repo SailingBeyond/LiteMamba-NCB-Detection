@@ -1,0 +1,73 @@
+{
+  "split": "test",
+  "n_samples": 43246,
+  "checkpoint_sha256": "4278523b8f1dbdfcb19250020b126e4f8b16165482a9c2c9c637d54015441462",
+  "dataset_identity": {
+    "input_fingerprints": {
+      "feature": {
+        "sha256": "3a1c378a7163fcd00a61d10474cb0cdd96834c3c538524b5496161fd0a5daae5",
+        "size": 38232490
+      },
+      "metadata": {
+        "sha256": "7b047d0a3ac3bc3493b5a495671104fd32ed35692bc075b47a6980dd9df2c962",
+        "size": 9423921
+      }
+    },
+    "preprocessing": {
+      "base_order": [
+        "A",
+        "C",
+        "T",
+        "G",
+        "N"
+      ],
+      "cache_version": "binary-read-held-out-v1.5",
+      "dwell_divisor": 60.0,
+      "feature_columns": [
+        "kmer",
+        "mean",
+        "std",
+        "median",
+        "dwell",
+        "quality",
+        "mismatch",
+        "insertion",
+        "deletion",
+        "signal",
+        "label"
+      ],
+      "input_label_policy": "strict_binary_0_1",
+      "label_values": [
+        0,
+        1
+      ],
+      "mask_base": "N",
+      "mask_index": 3,
+      "quality_divisor": 50.0,
+      "raw_signal_len": 30,
+      "seq_len": 6,
+      "signal_rectification": "symmetric_zero_pad_or_floor_linspace_indices",
+      "signal_round_decimals": 4
+    }
+  },
+  "completed_at": "2026-10-27T08:18:35.671420+00:00",
+  "metrics": {
+    "raw": {
+      "accuracy": 0.9726911159413587,
+      "precision": 0.9756608339538347,
+      "recall": 0.9695694399482033,
+      "f1": 0.9726055994989677,
+      "auroc": 0.9950513002527672,
+      "auprc": 0.995277941303321,
+      "specificity": 0.9758127919345142,
+      "mcc": 0.9454006576582841,
+      "n": 43246,
+      "negative_support": 21623,
+      "positive_support": 21623,
+      "tn": 21100,
+      "fp": 523,
+      "fn": 658,
+      "tp": 20965
+    }
+  }
+}

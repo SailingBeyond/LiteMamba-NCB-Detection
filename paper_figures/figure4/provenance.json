@@ -1,0 +1,57 @@
+{
+  "source_package": "figure4_gatedconv_panels_v1_3_3.zip",
+  "source_package_sha256": "d75846bddabe5e4576385ba339788bd1ddae962b63378329cd1ddb90b647ad8f",
+  "replay_inputs": {
+    "figure4_gatedconv_per6mer_core_v1_0_0.tar.gz": {
+      "source_sha256": "d2a10dff4af571c268683d0f70f6732d9bbbae6ce712efe0e4e695ce85772087",
+      "files": {
+        "collection_manifest.json": {
+          "size_bytes": 892,
+          "sha256": "eb5c1cb843782da33a4aefc625be39d7a200771f2cc80fa148bdca5c2a7fa19d"
+        },
+        "joint_counts.csv.gz": {
+          "size_bytes": 17494,
+          "sha256": "538eadd1ed1a25c15ce116df13844385530030ae503829f0d55ea1fdd3842a45"
+        }
+      }
+    },
+    "figure4_gatedconv_threshold_statistics_v1_0_0.tar.gz": {
+      "source_sha256": "481e3af3c9e084f3567d0edf6b9dab176a045e9c6fa5aeb58a21e5bb8959d360",
+      "files": {
+        "cohort_class_metrics_per_seed.csv": {
+          "size_bytes": 455031,
+          "sha256": "72e8c6f030c0e128bc5f38a92a059cb9ca84c50792ea482d941e0b6020932bb7"
+        },
+        "cohort_metrics_per_seed.csv": {
+          "size_bytes": 179375,
+          "sha256": "d3e9b46334f822b519bfdc07a2b98a521fd504271942404edb4991d6999f8af7"
+        },
+        "collection_manifest.json": {
+          "size_bytes": 1607,
+          "sha256": "daf7b9da0a12add5cdb28c1ef13081fe663ef4c8db3f0867cd7ce814e784fea8"
+        },
+        "context_metrics_per_seed.csv.gz": {
+          "size_bytes": 693133,
+          "sha256": "16ad8f04617e438cab493991dae635aca5cbb00d3f14d2423fcf72be98e85246"
+        },
+        "metric_definitions.json": {
+          "size_bytes": 2756,
+          "sha256": "b8211dd76a4c01bd337d534995b4eea8a15e9541c93db109a05ce705cb4291d1"
+        },
+        "threshold_confusion_counts.csv.gz": {
+          "size_bytes": 177594,
+          "sha256": "e7c9b6c398c425e43fbc4c34812ce9669b7ed1d754fbfb56a39bf38c5201f6f6"
+        },
+        "validation_threshold_candidates.json": {
+          "size_bytes": 6451,
+          "sha256": "24b408a9922d6d838ef27f09ed3a69ca1a82bcb41a85ab837fd76ae99bcdd454"
+        }
+      }
+    }
+  },
+  "manuscript_image": {
+    "file": "Figure4_manuscript.png",
+    "sha256": "d3982d909adf89f489a9c41993a1c335dc4b0158712996e94121c05c159e210d",
+    "selection": "Author-supplied Figure 4, panels A–D"
+  }
+}
